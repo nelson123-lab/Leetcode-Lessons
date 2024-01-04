@@ -1,12 +1,23 @@
-class Solution:
-    def duplicateZeros(self, arr: List[int]) -> None:
-        k = len(arr)
-        i = 0
-        while i < k:
-            if arr[i] == 0:
-                arr.insert(i+1,0)
-                i += 2
+class Solution(object):
+    def duplicateZeros(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: None Do not return anything, modify arr in-place instead.
+        """
+        idx = 0
+        length = len(arr)
+        while idx < length:
+            if arr[idx] == 0:
+                arr.insert(idx+1, 0)
+                idx += 2
             else:
-                i +=1
-        while len(arr) > k:
+                idx += 1 
+        while len(arr) > length:
             arr.pop()
+
+"""
+Here we are first inserting the 0 into the array whenever we see a 0.
+Then poping out the extra elements from the list.
+Time complexity O(n)
+Space complexity O(1)
+"""
