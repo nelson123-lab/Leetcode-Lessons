@@ -31,11 +31,17 @@ class Solution(object):
                 temp = nums[k]
                 nums[k] = nums[i]
                 nums[i] = temp
+
+                # A simple way to do the same.
+                # nums[k], nums[i] = nums[i], nums[k]
                 k += 1
             else: pass
         return nums
 
+# We can also do a = a+b , b = a - b, a = a - b
 """
 Time Complexity O(n)
 Space Complexity O(1)
 """
+
+
