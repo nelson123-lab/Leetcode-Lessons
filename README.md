@@ -1,1 +1,1 @@
-# Leetcode-Lessons
+This repository contains the information and coding lessons I learned from different LeetCode lessons. It also contains the solved answers to the different coding questions mentioned in the LeetCode lessons.
